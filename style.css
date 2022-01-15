@@ -154,7 +154,10 @@ i.fas.fa-cart-plus {
 	color: #fff;
 	text-decoration: none;
 }
-
+.align-right{
+ text-align: right;
+ padding:8px;
+}
 .half-width {
 	width: 50%;
 }
@@ -171,7 +174,7 @@ i.fas.fa-cart-plus {
 /* collection style  */
 
 
-/* courses style  */
+/* collections style  */
 
 .section-title {
 	text-align: center;
@@ -179,7 +182,7 @@ i.fas.fa-cart-plus {
 	font-size: 28px;
 }
 
-.courses {
+.collections {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 24px;
@@ -189,7 +192,7 @@ i.fas.fa-cart-plus {
 	grid-template-columns: repeat(5, 1fr);
 	grid-column-gap: 24px;
 }
-.course {
+.collection {
 	padding: 20px;
 	background-color: #ffffff;
 	border-radius: 10px;
@@ -197,12 +200,12 @@ i.fas.fa-cart-plus {
 	box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
 }
 
-.course .course-banner img {
+.collection .collection-banner img {
 	width: 100%;
 	height: auto;
 }
 
-.course-info {
+.collection-info {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -279,7 +282,7 @@ footer {
 	.para-style .title-style {
 		text-align: center;
 	}
-	.courses {
+	.collections {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		grid-column-gap: 24px;
