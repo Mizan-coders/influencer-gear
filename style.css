@@ -270,7 +270,11 @@ i.fas.fa-cart-plus {
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 24px;
 }
-
+.best-selling{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 24px;
+}
 .course {
 	padding: 20px;
 	background-color: #ffffff;
@@ -359,6 +363,11 @@ footer {
 		text-align: center;
 	}
 	.courses {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-column-gap: 24px;
+	}
+	.best-selling{
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		grid-column-gap: 24px;
