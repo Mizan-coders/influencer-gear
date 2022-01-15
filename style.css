@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body{
+  background-color: #f5f5f5;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  max-width: 95%;
+  margin: 0 auto;
+}
+/* menu styles start */
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #f5f5f5;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #000!important;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+ /* icon css  */
+ i.fas.fa-search {
+  color: #000000;
+  margin: 0px 20px;
+}
+i.fas.fa-cart-plus {
+    color: #000000;
+}
+ /* icon css end */
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 50%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 20px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: rgb(0, 0, 0);
+  }
+  nav .logo {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 20px;
+  flex-wrap: wrap;
+}
+.fa-bars:before {
+  content: "\f0c9"!important;
+  color: #000!important;
+}
+nav ul li a {
+  color: #f7f7f7;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+}
+/* menu styles end  */
+/* top style  */
+.top-section{
+  padding-top: 50px;
+}
+.portfolio-image img{
+  marging-left:80px;
+}
+.flex{
+  display: flex;
+}
+.text-border{
+  /* border-left:3px solid #d93bcc; */
+  margin-top:50px
+}
+.text-color{
+  color:#db8344;
+}
+.align-center{
+  text-align: center;
+}
+.title-style{
+  font-size: 60px;
+  font-family: ui-monospace;
+  font-weight: 700;
+  /* margin: 15px; */
+}
+.link-button {
+  background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%)
+}
+.link-button{
+  margin: 0px;
+  padding: 15px 22px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+.link-button:hover{
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.half-width{
+  width: 50%;
+  padding-left: 7%;
+}
+.para-style{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* top styles end  */
+ /* collection style  */
+ /* courses style  */
+ .section-title{
+  text-align: center;
+ }
+.courses{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+}
+.course {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+}
+.course .course-banner img{
+  width: 100%;
+  height: auto;
+}
+.course-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-star{
+  font-size: 12px;
+}
+.fa-star.filled {
+  color: #FFC014;
+  ;
+}
+.fa-star.empty {
+  color:#AEAEAE;
+}
+footer {
+    text-align: center;
+    background-color: #0A0826;
+    padding: 20px;
+    margin-top: 50px;
+    color: #fff;
+}
+.footer-title {
+    font-size: 30px;
+    font-family: ui-monospace;
+    font-weight: 700;
+    margin: 15px;
+    color: #fff;
+}
+.fab {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 25px;
+  padding: 10px;
+}
+
+.fa-globe:before {
+    content: "\f0ac";
+    font-size: 25px;
+}
